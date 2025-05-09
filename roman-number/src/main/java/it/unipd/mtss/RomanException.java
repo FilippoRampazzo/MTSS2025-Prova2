@@ -1,0 +1,11 @@
+////////////////////////////////////////////////////////////////////
+// Kevin Basso 2101077
+// Filippo Rampazzo 2101097
+////////////////////////////////////////////////////////////////////
+package it.unipd.mtss;
+
+public class RomanException extends Exception {
+    public RomanException(String message) {
+       super(message);
+    }
+ }
