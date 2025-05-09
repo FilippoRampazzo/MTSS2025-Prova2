@@ -31,6 +31,32 @@ public class RomanPrinterTest {
         assertEquals(expected, RomanPrinter.printAsciiArt("V"));
     }
 
+
+    @Test
+    public void testPrintX() throws RomanException {
+        String expected = String.join("\n",
+            "__   __",
+            "\\ \\ / /",
+            " \\ V / ",
+         "  > <  ",
+         " / . \\ ",
+         "/_/ \\_\\\n");  
+        assertEquals(expected, RomanPrinter.printAsciiArt("X"));
+    }
+
+    @Test
+    public void testPrintL() throws RomanException {
+        String expected = String.join("\n",
+            " _      ",
+            "| |     ",
+            "| |     ",
+            "| |     ",
+            "| |____ ",
+            "|______|\n");  
+        assertEquals(expected, RomanPrinter.printAsciiArt("L"));
+    }
+
+
     @Test
 public void testPrint4() throws RomanException {
     String expected = String.join("\n",
