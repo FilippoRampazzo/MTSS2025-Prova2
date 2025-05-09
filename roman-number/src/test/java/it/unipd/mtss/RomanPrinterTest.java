@@ -31,6 +31,32 @@ public class RomanPrinterTest {
         assertEquals(expected, RomanPrinter.printAsciiArt("V"));
     }
 
+
+    @Test
+    public void testPrintX() throws RomanException {
+        String expected = String.join("\n",
+            "__   __",
+            "\\ \\ / /",
+            " \\ V / ",
+         "  > <  ",
+         " / . \\ ",
+         "/_/ \\_\\\n");  
+        assertEquals(expected, RomanPrinter.printAsciiArt("X"));
+    }
+
+    @Test
+    public void testPrintL() throws RomanException {
+        String expected = String.join("\n",
+            " _      ",
+            "| |     ",
+            "| |     ",
+            "| |     ",
+            "| |____ ",
+            "|______|\n");  
+        assertEquals(expected, RomanPrinter.printAsciiArt("L"));
+    }
+
+
     @Test
 public void testPrint4() throws RomanException {
     String expected = String.join("\n",
@@ -43,6 +69,21 @@ public void testPrint4() throws RomanException {
 
     // Test con il numero 4
     assertEquals(expected, RomanPrinter.printAsciiArt("IV"));
+}
+
+    @Test
+public void testPrint6() throws RomanException {
+    String expected = String.join("\n",
+        "  _____     _____     _        __   __  __   __  __   __   _____   __   __",
+        " / ____|   |  __ \\   | |       \\ \\ / /  \\ \\ / /  \\ \\ / /  |_   _|  \\ \\ / /",
+        "| |        | |  | |  | |        \\ V /    \\ V /    \\ V /     | |     \\ V / ",
+        "| |        | |  | |  | |         > <      > <      > <      | |      > <  ",
+        "| |____    | |__| |  | |____    / . \\    / . \\    / . \\    _| |_    / . \\ ",
+        " \\_____|   |_____/   |______|  /_/ \\_\\  /_/ \\_\\  /_/ \\_\\  |_____|  /_/ \\_\\\n"
+    );
+
+    // Test con il numero 6
+    assertEquals(expected, RomanPrinter.printAsciiArt("CDLXXXIX"));
 }
 
     @Test

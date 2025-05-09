@@ -26,7 +26,45 @@ public class RomanPrinter {
          "   \\  /   ",
          "    \\/    "});
 
-     
+      ASCII.put('X', new String[]{
+         "__   __",
+         "\\ \\ / /",
+         " \\ V / ",
+         "  > <  ",
+         " / . \\ ",
+         "/_/ \\_\\"});
+
+      ASCII.put('L', new String[]{
+         " _      ",
+         "| |     ",
+         "| |     ",
+         "| |     ",
+         "| |____ ",
+         "|______|"});
+
+      ASCII.put('C', new String[]{
+         "  _____  ",
+         " / ____| ",
+         "| |      ",
+         "| |      ",
+         "| |____  ",
+         " \\_____| "});
+
+      ASCII.put('D', new String[]{
+         " _____  ",
+         "|  __ \\ ",
+         "| |  | |",
+         "| |  | |",
+         "| |__| |",
+         "|_____/ "});
+
+      ASCII.put('M', new String[]{
+         " __  __ ",
+         "|  \\/  |",
+         "| \\  / |",
+         "| |\\/| |",
+         "| |  | |",
+         "|_|  |_|"});
    }
 
    public static String print(int num) throws RomanException {
