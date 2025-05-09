@@ -72,6 +72,21 @@ public void testPrint4() throws RomanException {
 }
 
     @Test
+public void testPrint6() throws RomanException {
+    String expected = String.join("\n",
+        "  _____     _____     _        __   __  __   __  __   __   _____   __   __",
+        " / ____|   |  __ \\   | |       \\ \\ / /  \\ \\ / /  \\ \\ / /  |_   _|  \\ \\ / /",
+        "| |        | |  | |  | |        \\ V /    \\ V /    \\ V /     | |     \\ V / ",
+        "| |        | |  | |  | |         > <      > <      > <      | |      > <  ",
+        "| |____    | |__| |  | |____    / . \\    / . \\    / . \\    _| |_    / . \\ ",
+        " \\_____|   |_____/   |______|  /_/ \\_\\  /_/ \\_\\  /_/ \\_\\  |_____|  /_/ \\_\\\n"
+    );
+
+    // Test con il numero 6
+    assertEquals(expected, RomanPrinter.printAsciiArt("CDLXXXIX"));
+}
+
+    @Test
     public void testInvalidCharacter() {
         try {
             RomanPrinter.printAsciiArt("A");
