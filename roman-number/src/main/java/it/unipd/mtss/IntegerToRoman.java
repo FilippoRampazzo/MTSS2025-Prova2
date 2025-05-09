@@ -5,11 +5,11 @@
 package it.unipd.mtss;
 public class IntegerToRoman {
    private static final int[] VALUES = {5, 4, 1};
-   private static final String[] SYMBOLS = {"V", "IV", "I"};
+   private static final String[] SYMBOLS = {"L", "XL", "X", "IX", "V", "IV", "I"};
 
    public static String convert(int num) throws RomanException {
-       if (num < 1 || num > 8) {
-           throw new RomanException("Input fuori dai limiti (1-8): " + num);
+       if (num < 1 || num > 89) {
+           throw new RomanException("Input fuori dai limiti (1-89): " + num);
        }
 
        StringBuilder sb = new StringBuilder();
